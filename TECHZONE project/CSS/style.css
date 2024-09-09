@@ -1,0 +1,421 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'ebad-1';
+    src: url(/FONT/ebad-1.ttf);
+}
+
+body {
+    font-family: 'ebad-1';
+}
+
+/* Main Header Style */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('/IMG/hero_bg_1\ \(2\).jpg') no-repeat ;
+   
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'ebad-1';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.nav-links li a:hover{
+    color: rgb(14, 86, 180);
+  
+
+}
+
+.post-job-btn {
+    background-color: #00AEEF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 40px 90px;
+}
+
+.left-content {
+    max-width: 40%;
+}
+
+.left-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    padding-block: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons .blue {
+    background-color: #00AEEF;
+    color: white;
+    padding-inline: 30px;
+    padding-block: 20px;
+}
+
+/* Right Content */
+.right-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    background-color: snow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-bar :focus{
+    color: #445157;
+   outline-color: #00aeff;
+}
+
+
+.search-bar button {
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-inline: 40px;
+    padding-block: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    transition: 0.5s all;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    border-bottom:3px solid #00aeff;
+    border-right:3px solid #00aeff;
+    
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+   
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-text p:hover {
+    color: #00aeef;
+    transition: color 0.3s ease;
+}
+
+
+/* hero section */
+
+.hero-section {
+   padding-block: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.container {
+  
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.6s;
+}
+.card:hover{
+    border: 1px solid #00aeff;
+    
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    
+
+
+    .main-content {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .left-content h1 {
+        font-size: 3rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .right-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .main-content {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .left-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .right-content {
+        margin-top: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input, .search-bar button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        order: 1;
+        padding: 20px;
+    }
+
+    .about-text {
+        order: 2;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content h1 {
+        font-size: 2rem;
+    }
+
+    .buttons .btn {
+        font-size: 12px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+}
